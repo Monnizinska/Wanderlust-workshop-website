@@ -6,7 +6,7 @@
     height: 100vh;
     color: $dark-green;
     @media screen and(min-width: $medium){
-        background-position: 0 -100px;
+        background-position: bottom;
     }
 
     .contact-box{

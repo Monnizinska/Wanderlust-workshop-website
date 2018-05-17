@@ -17,9 +17,3 @@
 #footer .footer-nav a {
   color: #18292E;
   text-decoration: none; }
-
-@media all and (max-width: 992px) {
-  #footer .footer-nav,
-  #footer .footer-copy {
-    text-align: center;
-    margin: 10px; } }

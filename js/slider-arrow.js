@@ -4,7 +4,7 @@ const slideWidth = $(".single-slide").width;
     
 let slideNumber = 0; 
 
-slideShow.css("width", slideCount * 23 + "%");
+slideShow.css("width", slideCount *  100 + "%");
     
 slideShow.find(".single-slide").each(function(index, element){
     $(this).css({
@@ -26,16 +26,16 @@ $(".next-slide").click(function(){
 
 function slide(newSlideNumber){
     if(newSlideNumber < 0) {
-        newSlideNumber = 1;
+        newSlideNumber = 4;
     }
     
     if(newSlideNumber >= slideCount -4) {
-        newSlideNumber = 1;
+        newSlideNumber = 0;
     }
     
-    var slideCaption = $('.slide-caption').eq(newSlideNumber);
+    let slideCaption = $('.slide-caption').eq(newSlideNumber);
     
-    var marginLeft = newSlideNumber * (-51) + '%';
+    let marginLeft = newSlideNumber * (-20.6) + '%';
     
     slideCaption.hide();
     
