@@ -1,0 +1,40 @@
+@import 'zmienne';
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+    body {
+        color: $light-gray;
+        font-family: 'Poiret One', cursive;
+        margin: 0;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Abril Fatface', cursive;
+            overflow: hidden;
+        }
+
+        .italic-font {
+            font-family: 'Poiret One', cursive;
+        }
+        h4{
+            letter-spacing: 1px;
+        }
+
+        p{
+            font-size: 1rem;
+            letter-spacing: 0.65px;
+        }
+
+    }
+}
+@import 'nav';
+@import 'header';
+@import 'services';
+@import 'slider';
+@import 'team';
+@import 'contact';
+@import 'footer';

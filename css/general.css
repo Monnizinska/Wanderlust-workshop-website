@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  letter-spacing: 1px; }
+  * body {
+    color: #344143;
+    font-family: 'Poiret One', cursive;
+    margin: 0; }
+    * body h1,
+    * body h2,
+    * body h3,
+    * body h4,
+    * body h5,
+    * body h6 {
+      font-family: 'Abril Fatface', cursive;
+      overflow: hidden; }
+    * body .italic-font {
+      font-family: 'Poiret One', cursive; }
+    * body h4 {
+      letter-spacing: 1px; }
+    * body p {
+      font-size: 1rem;
+      letter-spacing: 0.65px; }
+
+.navScroll {
+  background-color: white; }
+
+#main-nav a.navbar-brand {
+  color: #fff;
+  font-style: italic; }
+
+#main-nav .nav-item a {
+  color: #fff; }
+
+#main-nav .nav-item a:hover {
+  color: #D04E2D; }
+
+#main-nav.scroll .nav-item a:hover {
+  color: #344143; }
+
+/*GENERAL NAVIGATION -END*/
+#main-header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center; }
+
+#content {
+  padding-top: 25vh;
+  padding-bottom: 25vh; }
+
+.nav-button {
+  background-color: #D04E2D;
+  border-style: none; }
+
+#content h1 {
+  font-size: 4em;
+  font-weight: 400; }
+
+#content h2 {
+  font-weight: 400;
+  font-size: 2em; }
+
+#main-header > a {
+  position: relative;
+  font-weight: 400;
+  margin-top: 50px;
+  background-color: #D04E2D;
+  border: none; }
+
+#main-header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  font-weight: 400; }
+  #main-header h1 {
+    font-size: 84px;
+    letter-spacing: 1px; }
+  #main-header h2 {
+    font-size: 40px;
+    letter-spacing: 2px; }
+  #main-header button {
+    background-color: #D04E2D;
+    border-style: none;
+    color: #344143; }
+
+.service-section {
+  align-items: center;
+  text-align: center;
+  border: dashed 1px #5A544F; }
+
+h4 {
+  line-height: 36px; }
+
+.service-section .row .service-item i {
+  background-color: #D04E2D;
+  color: white;
+  border-radius: 50%;
+  font-size: 3.3em;
+  height: 80px;
+  line-height: 80px;
+  transition: all .7s;
+  width: 80px; }
+
+.service-section .row .service-item i:hover {
+  background-color: white;
+  border: 1px dashed #D04E2D;
+  color: #D04E2D;
+  transform: rotate(360deg); }
+
+.service-section .row .service-item h4 {
+  font-weight: bold;
+  margin: 30px; }
+
+#slider .single-slide img {
+  height: 100%;
+  width: 230px;
+  overflow: hidden; }
+
+#slider .slide {
+  margin-left: 35px; }
+
+#slider .single-slide {
+  background-color: white;
+  height: 300px; }
+
+#slider .slide-show {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  position: relative; }
+
+#slider .gallery-box {
+  margin-top: 33.33%; }
+
+#slider .arrow {
+  height: 20px;
+  width: 20px;
+  margin-top: -180px;
+  border: transparent;
+  background-color: transparent; }
+
+#slider .prev-slide {
+  border-left: white 2px solid;
+  border-bottom: white 2px solid;
+  margin-left: 35px;
+  position: absolute;
+  transform: rotate(45deg); }
+
+#slider .next-slide {
+  border-right: white 2px solid;
+  border-bottom: white 2px solid;
+  transform: rotate(-45deg);
+  position: absolute;
+  margin-left: 92vw; }
+
+#team {
+  text-align: center;
+  background-color: #18292E;
+  color: #5A544F; }
+  #team .team-member {
+    height: 350px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    position: relative; }
+    #team .team-member .team-member-text {
+      color: #18292E;
+      margin-top: 310px;
+      height: 40px;
+      background-color: #D04E2D;
+      transition: all .4s; }
+      #team .team-member .team-member-text h4 {
+        font-weight: bold; }
+
+#team .team-member:hover .team-member-text {
+  margin-top: 0;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#team-member-1 {
+  background-image: url(../img/vladislav-nikonov-641657-unsplash.jpg); }
+
+#team-member-2 {
+  background-image: url(../img/jaunt-and-joy-658006-unsplash.jpg); }
+
+#team-member-3 {
+  background-image: url(../img/jon-ly-610685-unsplash.jpg); }
+
+#team .team-member .team-member-social i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #D04E2D;
+  border-radius: 50%;
+  margin: 0 5px;
+  color: #18292E;
+  font-size: 25px;
+  transition: all .4s; }
+
+#team .team-member:hover i {
+  background-color: transparent;
+  border: 1px solid #D04E2D;
+  color: #D04E2D; }
+
+#contact {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/luca-bravo-177552-unsplash.jpg);
+  background-size: cover;
+  background-position: 0 -100px;
+  height: 100vh;
+  color: #18292E; }
+  #contact .contact-box {
+    background-color: rgba(250, 250, 250, 0.5); }
+
+#contact input {
+  margin-bottom: 20px;
+  height: 40px; }
+
+#contact #message {
+  resize: none;
+  min-height: 160px; }
+
+#contact input::placeholder,
+#contact #message::placeholder {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4); }
+
+#contact .btn-contact {
+  width: 150px;
+  background-color: #D04E2D;
+  font-size: 10px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px; }
+
+#contact .btn-contact:hover {
+  color: #D04E2D;
+  background-color: transparent;
+  border: 2px solid #D04E2D; }
+
+#footer {
+  font-size: 14px; }
+
+#footer .footer-social i {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  background-color: #D04E2D;
+  border-radius: 50%;
+  color: white; }
+
+#footer .footer-social i:hover {
+  background-color: transparent;
+  color: #D04E2D;
+  border: 1px solid #D04E2D; }
+
+#footer .footer-nav a {
+  color: #18292E;
+  text-decoration: none; }
+
+@media all and (max-width: 992px) {
+  #footer .footer-nav,
+  #footer .footer-copy {
+    text-align: center;
+    margin: 10px; } }

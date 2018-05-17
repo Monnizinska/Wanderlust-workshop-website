@@ -1,0 +1,25 @@
+#footer {
+  font-size: 14px; }
+
+#footer .footer-social i {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  background-color: #D04E2D;
+  border-radius: 50%;
+  color: white; }
+
+#footer .footer-social i:hover {
+  background-color: transparent;
+  color: #D04E2D;
+  border: 1px solid #D04E2D; }
+
+#footer .footer-nav a {
+  color: #18292E;
+  text-decoration: none; }
+
+@media all and (max-width: 992px) {
+  #footer .footer-nav,
+  #footer .footer-copy {
+    text-align: center;
+    margin: 10px; } }

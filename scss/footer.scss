@@ -1,0 +1,36 @@
+@import 'zmienne'; 
+
+#footer {
+    font-size: 14px;
+   }
+   
+   
+   #footer .footer-social i {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background-color: $coral;
+    border-radius: 50%;
+    color: white;
+   }
+   
+   #footer .footer-social i:hover {
+    background-color: transparent;
+    color: $coral;
+    border: 1px solid $coral;
+   }
+
+   
+   #footer .footer-nav a {
+    color: $dark-green;
+    text-decoration: none;
+   }
+   
+   
+   @media all and (max-width: 992px) {
+    #footer .footer-nav,
+    #footer .footer-copy {
+    text-align: center;
+    margin: 10px;
+    }
+   }

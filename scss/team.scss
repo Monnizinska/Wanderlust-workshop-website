@@ -1,0 +1,71 @@
+@import 'zmienne';
+#team {
+    text-align: center;
+    background-color: $dark-green;
+    color: $light-red;
+
+    .team-member {
+        height: 350px;
+        width: 250px;
+        background-size: cover;
+        background-position: center;
+        display: inline-block;
+        position: relative;
+
+
+        .team-member-text {
+            color: $dark-green;
+            margin-top: 310px;
+            height: 40px;
+            background-color: $coral;
+            transition: all .4s;
+            h4 {
+            font-weight: bold;
+            }
+        }
+    }
+
+
+}
+
+#team .team-member:hover .team-member-text {
+    margin-top: 0;
+    height: 350px;
+    background-color: rgba($color: #fff, $alpha: 0.5);
+   
+}
+
+
+
+
+#team-member-1 {
+    background-image: url(../img/vladislav-nikonov-641657-unsplash.jpg);
+}
+
+#team-member-2 {
+    background-image: url(../img/jaunt-and-joy-658006-unsplash.jpg);
+}
+
+#team-member-3 {
+    background-image: url(../img/jon-ly-610685-unsplash.jpg);
+}
+
+
+
+#team .team-member .team-member-social i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $coral;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: $dark-green;
+    font-size: 25px;
+    transition: all .4s;
+}
+
+#team .team-member:hover i {
+    background-color: transparent;
+    border: 1px solid $coral;
+    color: $coral;
+}
