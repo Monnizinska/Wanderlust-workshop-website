@@ -16,21 +16,47 @@
             font-family: 'Abril Fatface', cursive;
             overflow: hidden;
         }
-
+        h1 {
+            letter-spacing: 1px;
+            font-size: 48px;
+            @media screen and(min-width: $small){
+                font-size: 62px;
+            }
+            @media screen and(min-width: $medium) {
+                font-size: 84px;
+            }
+        }
+        h2 {
+            font-size: 20px;
+            letter-spacing: 2px;
+            @media screen and(min-width: $small){
+                font-size: 32px;
+            }
+            @media screen and(min-width: $medium) {
+                font-size: 40px;
+            }
+        }
+        h4 {
+            font-size: 18px;
+            line-height: 34px;
+            @media screen and(min-width: $small){
+                font-size: 24px;
+            }
+            @media screen and(min-width: $medium) {
+                line-height: 36px;
+                letter-spacing: 1px;
+            }
+        }
+        p {
+            font-size: 16px;
+            letter-spacing: 0.65px;
+        }
         .italic-font {
             font-family: 'Poiret One', cursive;
         }
-        h4{
-            letter-spacing: 1px;
-        }
-
-        p{
-            font-size: 1rem;
-            letter-spacing: 0.65px;
-        }
-
     }
 }
+
 @import 'nav';
 @import 'header';
 @import 'services';

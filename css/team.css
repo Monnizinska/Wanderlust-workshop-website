@@ -10,6 +10,7 @@
     display: inline-block;
     position: relative; }
     #team .team-member .team-member-text {
+      overflow: hidden;
       color: #18292E;
       margin-top: 310px;
       height: 40px;
@@ -33,6 +34,7 @@
   background-image: url(../img/jon-ly-610685-unsplash.jpg); }
 
 #team .team-member .team-member-social i {
+  overflow: hidden;
   width: 40px;
   height: 40px;
   line-height: 40px;

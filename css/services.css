@@ -3,10 +3,8 @@
   text-align: center;
   border: dashed 1px #5A544F; }
 
-h4 {
-  line-height: 36px; }
-
-.service-section .row .service-item i {
+.service-section .service-item i {
+  overflow: hidden;
   background-color: #D04E2D;
   color: white;
   border-radius: 50%;
@@ -16,12 +14,12 @@ h4 {
   transition: all .7s;
   width: 80px; }
 
-.service-section .row .service-item i:hover {
+.service-section .service-item i:hover {
   background-color: white;
   border: 1px dashed #D04E2D;
   color: #D04E2D;
   transform: rotate(360deg); }
 
-.service-section .row .service-item h4 {
+.service-section .service-item h4 {
   font-weight: bold;
   margin: 30px; }

@@ -5,11 +5,9 @@
     border: dashed 1px $light-red;
 
 }
-h4{
-    line-height: 36px;
-}
 
-.service-section .row .service-item i {
+.service-section .service-item i {
+    overflow: hidden;
     background-color: $coral;
     color: white;
     border-radius: 50%;
@@ -20,7 +18,7 @@ h4{
     width: 80px;
 }
 
-.service-section .row .service-item i:hover {
+.service-section .service-item i:hover {
     background-color: white;
     border: 1px dashed $coral;
     color: $coral;
@@ -30,7 +28,7 @@ h4{
 
 }
 
-.service-section .row .service-item h4 {
+.service-section .service-item h4 {
     font-weight: bold;
     margin: 30px;
 }

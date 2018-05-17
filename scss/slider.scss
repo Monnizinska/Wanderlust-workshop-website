@@ -1,51 +1,59 @@
-#slider{
-    .single-slide{
-        img{
+@import 'zmienne';
+#slider {
+    .single-slide {
+        img {
             height: 100%;
-            width: 230px;
+            width: 100%;
             overflow: hidden;
-        }    
+        }
     }
-    .slide{
+    .slide {
         margin-left: 35px;
     }
-
-    .single-slide{
-        background-color:white;
-        height: 300px;
-        
+    .single-slide {
+        background-color: white;
+        height: 200px;
+        width: 150px;
+        @media screen and(min-width: $small) {
+            height: 300px;
+            width: 230px;
+        }
     }
     .slide-show {
         width: 100vw;
-        height: auto;
-        overflow: hidden;
-        position: relative;
+        height: 200px;
+        @media screen and(min-width: $small) {
+            height: 300px;
+        }
     }
-    .gallery-box{
+    .gallery-box {
         margin-top: 33.33%;
     }
-
-    .arrow{
+    .arrow {
         height: 20px;
         width: 20px;
-        margin-top: - 180px;
         border: transparent;
         background-color: transparent;
     }
-
-    .prev-slide{
+    .prev-slide {
         border-left: white 2px solid;
         border-bottom: white 2px solid;
         margin-left: 35px;
         position: absolute;
         transform: rotate(45deg);
     }
-
-    .next-slide{
+    .next-slide {
         border-right: white 2px solid;
         border-bottom: white 2px solid;
         transform: rotate(-45deg);
         position: absolute;
         margin-left: 92vw;
+    }
+    .prev-slide,
+    .next-slide {
+        margin-top: - 120px;
+        @media screen and(min-width: $small) {
+            margin-top: -180px;
+        }
     }
 }

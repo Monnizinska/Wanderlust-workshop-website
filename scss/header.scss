@@ -11,20 +11,18 @@
     text-align: center;
     font-weight: 400;
 
-    h1{
-        font-size: 84px;
-        letter-spacing: 1px;
-    }
-
-    h2{
-        font-size: 40px;
-        letter-spacing: 2px;
-    }
-
-    button{
+    a{
         background-color: $coral;
         border-style: none;
         color: $light-gray;
     }
+
+    a:hover{
+        background-color: transparent;
+        border: solid 2px $coral;
+        color: $coral;
+    }
+
+
 }
 
