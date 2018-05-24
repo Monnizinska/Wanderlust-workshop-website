@@ -9,7 +9,7 @@
   font-weight: 400; }
   #main-header a {
     background-color: #D04E2D;
-    border-style: none;
+    border: solid 2px transparent;
     color: #344143; }
   #main-header a:hover {
     background-color: transparent;

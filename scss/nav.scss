@@ -1,65 +1,25 @@
 @import 'zmienne';
+#main-nav {
 
-
-#main-nav a.navbar-brand {
-	color: #fff;
-    font-style: italic;
-}
-
-#main-nav .nav-item a {
-	color: #fff;
-}
-
-#main-nav .nav-item a:hover {
-	color: $coral;
-}
-
-
-#main-nav.scroll .nav-item a:hover {
-	color: $light-gray;
-}
-
-
-/*GENERAL NAVIGATION -END*/
-
-
-#main-header  {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-}
-
-@import 'zmienne';
-
-#content {
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-}
-
-
-.nav-button{
-    background-color: $coral;
-    border-style: none;
-}
-
-#content h1 {
-    font-size: 4em;
-	font-weight: 400;
-}
-
-#content h2 {
-	font-weight: 400;
-	font-size: 2em;
-}
-
-#main-header > a {
-    position: relative;
-	font-weight: 400;
-    margin-top: 50px;
-    background-color: $coral;
-    border: none;
+    #navbarSupportedContent{
+        height: 100vh;
+    }
+    .nav-item a{
+        color: white;
+        padding: 15px;
+        float: right; 
+        width: 10vw;
+        
+        // background-color: rgba($color: #000000, $alpha: 0.5)
+    }
+    a.navbar-brand {
+        color: $light-gray;
+        font-style: italic;
+    }
+   .nav-item a:hover {
+        color: $coral;
+    }
+    .scroll .nav-item a:hover {
+        color: $light-gray;
+    }
 }

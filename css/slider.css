@@ -4,7 +4,7 @@
   overflow: hidden; }
 
 #slider .slide {
-  margin-left: 0.5vw; }
+  margin: 0 0.25vw; }
 
 #slider .single-slide {
   background-color: white;

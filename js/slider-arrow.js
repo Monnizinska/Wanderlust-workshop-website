@@ -41,10 +41,10 @@ function slide(newSlideNumber){
     
     slideShow.animate({
         'margin-left': marginLeft,
-    }, 500, function() {
+    }, function() {
         slideNumber = newSlideNumber;
         slideCaption.fadeIn();
-    })
+    });
 }
 
 

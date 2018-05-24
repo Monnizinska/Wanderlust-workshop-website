@@ -1,45 +1,18 @@
-#main-nav a.navbar-brand {
-  color: #fff;
-  font-style: italic; }
+#main-nav #navbarSupportedContent {
+  height: 100vh; }
 
 #main-nav .nav-item a {
-  color: #fff; }
+  color: white;
+  padding: 15px;
+  float: right;
+  width: 10vw; }
+
+#main-nav a.navbar-brand {
+  color: #344143;
+  font-style: italic; }
 
 #main-nav .nav-item a:hover {
   color: #D04E2D; }
 
-#main-nav.scroll .nav-item a:hover {
+#main-nav .scroll .nav-item a:hover {
   color: #344143; }
-
-/*GENERAL NAVIGATION -END*/
-#main-header {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center; }
-
-#content {
-  padding-top: 25vh;
-  padding-bottom: 25vh; }
-
-.nav-button {
-  background-color: #D04E2D;
-  border-style: none; }
-
-#content h1 {
-  font-size: 4em;
-  font-weight: 400; }
-
-#content h2 {
-  font-weight: 400;
-  font-size: 2em; }
-
-#main-header > a {
-  position: relative;
-  font-weight: 400;
-  margin-top: 50px;
-  background-color: #D04E2D;
-  border: none; }
