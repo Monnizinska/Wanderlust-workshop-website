@@ -5,7 +5,7 @@
     letter-spacing: 1px;
     body {
         color: $light-gray;
-        font-family: 'Poiret One', cursive;
+        font-family: 'Poppins', sans-serif;
         margin: 0;
         h1,
         h2,
@@ -23,7 +23,7 @@
                 font-size: 62px;
             }
             @media screen and(min-width: $medium) {
-                font-size: 84px;
+                font-size: 6vw;
             }
         }
         h2 {
@@ -48,19 +48,23 @@
             }
         }
         p {
-            font-size: 16px;
-            letter-spacing: 0.65px;
+            color: #86919e;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 26px;
         }
-        .italic-font {
-            font-family: 'Poiret One', cursive;
+        .arrow{
+            height: 25px;
         }
     }
 }
 
 @import 'nav';
 @import 'header';
+@import 'about_us';
 @import 'services';
 @import 'slider';
-@import 'team';
+@import 'premium';
+@import 'references';
 @import 'contact';
 @import 'footer';

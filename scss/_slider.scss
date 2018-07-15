@@ -1,0 +1,118 @@
+@import 'zmienne';
+.instagram {
+    width: 105vw;
+    margin-left: -25px;
+    background-image: url(../img/eberhard-grossgasteiger-400042-unsplash.png);
+    min-height: 800px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+    .txt-box {
+        button {
+            background-color: $dark-green;
+            border: solid 2px $dark-green;
+            color: white;
+            border-radius: 4px;
+        }
+        h3 {
+            padding-top: 100px;
+        }
+    }
+    .square {
+        width: 100%;
+        height: 310px;
+    }
+    .square-1 {
+        margin-top: 80px;
+        background-image: url(../img/bryan-minear-325881-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .square-2 {
+        overflow: hidden;
+        padding: 40px;
+        background-color: white;
+        .instagram-icon,
+        .arrow {
+            height: 35px;
+        }
+        p {
+            margin-top: 40%;
+        }
+        .img{
+            overflow: hidden;
+        }
+    }
+
+    @media screen and(min-width: $small) {
+        h3 {
+            padding-top: 200px;
+        }
+    }
+    @media screen and(min-width: $medium) {
+        height: 100vh;
+    }
+}
+
+
+#slider {
+    .single-slide {
+        img {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+    .slide {
+        margin: 0 0.25vw;
+    }
+    .single-slide {
+        background-color: white;
+        height: 25vw;
+        width: 19.5vw;
+    }
+    .slide-show,
+    .slider-arrows {
+        width: 100vw;
+        height: 25vw;
+    }
+    .gallery-box {
+        margin-top: 33.33%;
+    }
+    .slider-arrows {
+        margin-top: -25vw;
+        ;
+    }
+    .arrow {
+        height: 4vw;
+        width: 4vw;
+        border: transparent;
+        background-color: transparent;
+        @media screen and(min-width: $small) {
+            height: 2vw;
+            width: 2vw;
+        }
+    }
+    .prev-slide {
+        border-left: white 2px solid;
+        border-bottom: white 2px solid;
+        left: 2vw;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    .next-slide {
+        border-right: white 2px solid;
+        border-bottom: white 2px solid;
+        transform: rotate(-45deg);
+        position: absolute;
+        right: 2vw;
+    }
+    .next-slide,
+    .prev-slide {
+        margin-top: 10vw;
+        @media screen and(min-width: $small) {
+            margin-top: 11.5vw;
+        }
+    }
+}

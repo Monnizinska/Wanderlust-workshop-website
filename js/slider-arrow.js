@@ -46,5 +46,8 @@ function slide(newSlideNumber){
         slideCaption.fadeIn();
     });
 }
+setInterval(function nextSlide(){
+    slide(slideNumber + 1);
+},2000);
 
 

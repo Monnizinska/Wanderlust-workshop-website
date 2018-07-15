@@ -1,0 +1,52 @@
+#references {
+    .semicolon {
+        height: 200px;
+        background-color: #D04E2D;
+        .semicolon-icon {
+            left: 2vw;
+            height: 160px;
+        }
+    }
+    .references-heading {
+        position: absolute;
+        margin-left: 150px;
+    }
+    .carousel-inner {
+        width: 80%;
+        margin: 80px auto 120px;
+        background-color: gainsboro;
+    }
+    .carousel-item {
+        text-align: center;
+        height: 300px;
+    }
+    .carousel-indicators {
+        li {
+            border-radius: 100%;
+            background-color: #D04E2D;
+            opacity: 0.5;
+            height: 10px;
+            width: 10px;
+        }
+        .active {
+            opacity: 1;
+        }
+        :before,
+        :after {
+            display: none;
+        }
+    }
+    @media screen and(min-width: $small) {
+        .references-heading {
+            margin-left: 25vw;
+        }
+        .carousel-inner {
+            width: 50%;
+        }
+    }
+    @media screen and(min-width: $medium) {
+        .references-heading {
+            margin-left: 22vw;
+        }
+    }
+}

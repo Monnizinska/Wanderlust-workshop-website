@@ -8,7 +8,9 @@
     @media screen and(min-width: $medium){
         background-position: bottom;
     }
-
+    p{
+        color: initial;
+    }
     .contact-box{
         background-color: rgba(250,250,250,0.5);
     }

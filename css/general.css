@@ -4,7 +4,7 @@
   letter-spacing: 1px; }
   * body {
     color: #344143;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Poppins', sans-serif;
     margin: 0; }
     * body h1,
     * body h2,
@@ -22,7 +22,7 @@
           font-size: 62px; } }
       @media screen and (min-width: 992px) {
         * body h1 {
-          font-size: 84px; } }
+          font-size: 6vw; } }
     * body h2 {
       font-size: 20px;
       letter-spacing: 2px; }
@@ -43,118 +43,53 @@
           line-height: 36px;
           letter-spacing: 1px; } }
     * body p {
-      font-size: 16px;
-      letter-spacing: 0.65px; }
-    * body .italic-font {
-      font-family: 'Poiret One', cursive; }
+      color: #86919e;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      line-height: 26px; }
+    * body .arrow {
+      height: 25px; }
 
-#main-nav {
+#navbar {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: auto;
-  z-index: 10;
-  background-image: linear-gradient(to bottom, rgba(208, 78, 45, 0.7), rgba(208, 78, 45, 0.7)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
-  height: 100vh;
-  opacity: 0.8;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  @media screen and (min-width: 768px) {
-    #main-nav {
-      width: 25vw;
-      left: 75vw; } }
-  #main-nav .nav-box {
-    margin: 0;
-    padding: 0;
+  width: 100vw; }
+  #navbar .logo {
+    height: 60px;
+    padding: 10px; }
+    @media screen and (min-width: 768px) {
+      #navbar .logo {
+        padding: 10px 60px; } }
+  #navbar .navbar-brand {
+    position: absolute;
+    align-self: center;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    margin-left: 45%; }
+  #navbar .navbar-nav :first-child {
+    margin-left: 1.15vw; }
+  #navbar .navbar-nav .nav-item {
+    align-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    #main-nav .nav-box li {
-      font-weight: 300;
-      color: white;
-      list-style: none;
-      padding-bottom: 5vh; }
-      #main-nav .nav-box li a {
-        color: white;
-        letter-spacing: 2px;
-        border-bottom: solid 2px transparent; }
-        @media screen and (min-width: 768px) {
-          #main-nav .nav-box li a {
-            font-size: 2.2vw; } }
-        @media screen and (min-width: 992px) {
-          #main-nav .nav-box li a {
-            font-size: 1.8vw; } }
-      #main-nav .nav-box li a:hover {
-        border-bottom: solid 2px white; }
+    align-self: center;
+    padding: 2vw; }
+    @media screen and (min-width: 992px) {
+      #navbar .navbar-nav .nav-item {
+        padding: 0 2vw; } }
+    #navbar .navbar-nav .nav-item a {
+      padding: 0;
+      font-size: 14px; }
+      @media screen and (min-width: 768px) {
+        #navbar .navbar-nav .nav-item a {
+          font-size: 16px; } }
+      @media screen and (min-width: 992px) {
+        #navbar .navbar-nav .nav-item a {
+          font-size: 1vw; } }
+    #navbar .navbar-nav .nav-item a:hover {
+      color: #18292E; }
 
-#nav-icon {
-  display: none;
-  position: relative;
-  margin-top: 20px;
-  float: right;
-  width: 45px;
-  height: 35px;
-  z-index: 110;
-  cursor: pointer;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out; }
-
-#nav-icon span {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background: #e0e0e0;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out; }
-
-#nav-icon span:nth-child(1) {
-  top: 0px; }
-
-#nav-icon span:nth-child(2) {
-  top: 10px; }
-
-#nav-icon span:nth-child(3) {
-  top: 20px; }
-
-#nav-icon.animate-icon span:nth-child(1) {
-  top: 16px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-#nav-icon.animate-icon span:nth-child(2) {
-  opacity: 0;
-  left: -60px; }
-
-#nav-icon.animate-icon span:nth-child(3) {
-  top: 16px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-
-@media screen and (max-width: 667px) {
-  #nav-icon {
-    width: 35px; } }
+.shadow {
+  -webkit-box-shadow: 0 8px 6px -6px #dad9d9;
+  -moz-box-shadow: 0 8px 6px -6px #dad9d9;
+  box-shadow: 0 8px 6px -6px #dad9d9; }
 
 #main-header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
@@ -165,6 +100,28 @@
   color: white;
   text-align: center;
   font-weight: 400; }
+  #main-header .header-caption {
+    overflow: visible; }
+  #main-header .logo {
+    position: absolute;
+    top: 30px; }
+  #main-header h2 {
+    margin-top: -130px; }
+  #main-header .frame {
+    display: block; }
+    #main-header .frame img {
+      width: 90vw;
+      height: 194.535px;
+      transition: none;
+      text-align: inherit;
+      line-height: 0px;
+      border-width: 0px; }
+      @media screen and (min-width: 768px) {
+        #main-header .frame img {
+          width: 60vw; } }
+      @media screen and (min-width: 992px) {
+        #main-header .frame img {
+          width: 50vw; } }
   #main-header a {
     background-color: #D04E2D;
     border: solid 2px transparent;
@@ -174,31 +131,162 @@
     border: solid 2px #D04E2D;
     color: #D04E2D; }
 
-.service-section {
-  align-items: center;
+#about h1 {
+  font-size: 13vw;
+  color: #e5ecea;
+  margin: 20px; }
+
+#about h3 {
+  line-height: 44px; }
+
+#about .clip-text {
+  position: relative;
+  display: inline-block;
   text-align: center;
-  border: dashed 1px #5A544F; }
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: url(../img/bcg.jpg); }
 
-.service-section .service-item i {
-  overflow: hidden;
-  background-color: #D04E2D;
-  color: white;
-  border-radius: 50%;
-  font-size: 3.3em;
-  height: 80px;
-  line-height: 80px;
-  transition: all .7s;
-  width: 80px; }
+#about .clip-text:before,
+#about .clip-text:after {
+  position: absolute; }
 
-.service-section .service-item i:hover {
-  background-color: white;
-  border: 1px dashed #D04E2D;
-  color: #D04E2D;
-  transform: rotate(360deg); }
+#about .clip-text:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit; }
 
-.service-section .service-item h4 {
-  font-weight: bold;
-  margin: 30px; }
+#about .clip-text:after {
+  position: absolute;
+  z-index: -1; }
+
+#about .clip-text--no-textzone:after {
+  content: none; }
+
+#about .clip-text--cover,
+#about .clip-text--cover:before {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+#about .txt-1 {
+  position: relative;
+  z-index: 10; }
+  #about .txt-1 .img {
+    margin-left: 100px;
+    z-index: 5; }
+  #about .txt-1 .txt-box {
+    margin-top: 60px;
+    background-color: white; }
+
+#about ul {
+  padding: 0; }
+  #about ul li {
+    position: relative; }
+    #about ul li .check {
+      height: 20px;
+      position: relative; }
+
+@media screen and (min-width: 768px) {
+  #about h1 {
+    margin: 0;
+    left: 38vw; }
+  #about .txt-1 {
+    margin-top: -80px;
+    overflow: visible; }
+    #about .txt-1 .img {
+      position: absolute; }
+    #about .txt-1 .txt-box {
+      margin-left: 15vw;
+      padding: 80px 60px 100px 120px;
+      box-shadow: 0px 20px 40px 0px rgba(168, 178, 193, 0.16); }
+  #about .txt-2 .img {
+    position: absolute;
+    margin-top: -600px;
+    right: 0; }
+  #about .txt-2 .txt-box {
+    padding: 80px 80px 100px 80px; }
+  #about ul li {
+    margin: 0 0 20px 0; } }
+
+@media screen and (min-width: 992px) {
+  #about .txt-1 .txt-box {
+    margin-left: 20vw;
+    padding: 100px 80px 180px 180px; }
+  #about .txt-2 .img {
+    margin-top: -800px; }
+  #about .txt-2 .txt-box {
+    margin-left: 1vw;
+    padding: 80px 80px 180px 180px; } }
+
+.service-section {
+  margin: 100px auto; }
+  .service-section .service-square {
+    padding: 40px;
+    height: auto;
+    background-color: white; }
+  .service-section .service-icon {
+    color: #D04E2D;
+    font-size: 24px; }
+  .service-section .fa {
+    padding: 20px 0; }
+  @media screen and (min-width: 768px) {
+    .service-section {
+      height: 900px; }
+      .service-section .service-img {
+        position: absolute;
+        margin-top: 320px;
+        width: 100%;
+        height: 60%;
+        background-image: url(../img/oscar-nord-696046-unsplash.jpg);
+        background-position: center;
+        background-size: cover; } }
+
+.instagram {
+  width: 105vw;
+  margin-left: -25px;
+  background-image: url(../img/eberhard-grossgasteiger-400042-unsplash.png);
+  min-height: 800px;
+  margin-bottom: 20px;
+  background-position: center;
+  background-size: cover; }
+  .instagram .txt-box button {
+    background-color: #18292E;
+    border: solid 2px #18292E;
+    color: white;
+    border-radius: 4px; }
+  .instagram .txt-box h3 {
+    padding-top: 100px; }
+  .instagram .square {
+    width: 100%;
+    height: 310px; }
+  .instagram .square-1 {
+    margin-top: 80px;
+    background-image: url(../img/bryan-minear-325881-unsplash.jpg);
+    background-position: center;
+    background-size: cover; }
+  .instagram .square-2 {
+    overflow: hidden;
+    padding: 40px;
+    background-color: white; }
+    .instagram .square-2 .instagram-icon,
+    .instagram .square-2 .arrow {
+      height: 35px; }
+    .instagram .square-2 p {
+      margin-top: 40%; }
+    .instagram .square-2 .img {
+      overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .instagram h3 {
+      padding-top: 200px; } }
+  @media screen and (min-width: 992px) {
+    .instagram {
+      height: 100vh; } }
 
 #slider .single-slide img {
   height: 100%;
@@ -256,57 +344,86 @@
     #slider .prev-slide {
       margin-top: 11.5vw; } }
 
-#team {
+#premium {
+  padding: 150px 0;
   text-align: center;
   background-color: #18292E;
   color: #5A544F; }
-  #team .team-member {
-    height: 350px;
+  #premium .single-offer {
     width: 250px;
-    background-size: cover;
-    background-position: center;
     display: inline-block;
     position: relative; }
-    #team .team-member .team-member-text {
+    #premium .single-offer .premium {
+      height: 455px;
+      background-size: cover;
+      background-position: center; }
+    #premium .single-offer .premium-text {
       overflow: hidden;
-      color: #18292E;
-      margin-top: 310px;
-      height: 40px;
+      color: white;
+      margin: 270px auto 10px;
+      width: 85%;
+      transition: all 2s; }
+    #premium .single-offer .premium-text:hover {
+      border-bottom: solid 1.5px white; }
+    #premium .single-offer p {
       background-color: #D04E2D;
-      transition: all .4s; }
-      #team .team-member .team-member-text h4 {
-        font-weight: bold; }
+      border-radius: 4px;
+      width: 50px;
+      text-align: center;
+      color: white; }
 
-#team .team-member:hover .team-member-text {
-  margin-top: 0;
-  height: 350px;
-  background-color: rgba(255, 255, 255, 0.5); }
+#premium-1 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../img/joseph-pearson-273638-unsplash.jpg); }
 
-#team-member-1 {
-  background-image: url(../img/vladislav-nikonov-641657-unsplash.jpg); }
+#premium-2 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../img/wenni-zhou-476645-unsplash.jpg); }
 
-#team-member-2 {
-  background-image: url(../img/jaunt-and-joy-658006-unsplash.jpg); }
+#premium-3 {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../img/jon-ly-610685-unsplash.jpg); }
 
-#team-member-3 {
-  background-image: url(../img/jon-ly-610685-unsplash.jpg); }
+#references .semicolon {
+  height: 200px;
+  background-color: #D04E2D; }
+  #references .semicolon .semicolon-icon {
+    left: 2vw;
+    height: 160px; }
 
-#team .team-member .team-member-social i {
-  overflow: hidden;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+#references .references-heading {
+  position: absolute;
+  margin-left: 150px; }
+
+#references .carousel-inner {
+  width: 80%;
+  margin: 80px auto 120px;
+  background-color: gainsboro; }
+
+#references .carousel-item {
+  text-align: center;
+  height: 300px; }
+
+#references .carousel-indicators li {
+  border-radius: 100%;
   background-color: #D04E2D;
-  border-radius: 50%;
-  margin: 0 5px;
-  color: #18292E;
-  font-size: 25px;
-  transition: all .4s; }
+  opacity: 0.5;
+  height: 10px;
+  width: 10px; }
 
-#team .team-member:hover i {
-  background-color: transparent;
-  border: 1px solid #D04E2D;
-  color: #D04E2D; }
+#references .carousel-indicators .active {
+  opacity: 1; }
+
+#references .carousel-indicators :before,
+#references .carousel-indicators :after {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  #references .references-heading {
+    margin-left: 25vw; }
+  #references .carousel-inner {
+    width: 50%; } }
+
+@media screen and (min-width: 992px) {
+  #references .references-heading {
+    margin-left: 22vw; } }
 
 #contact {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/luca-bravo-177552-unsplash.jpg);
@@ -316,6 +433,8 @@
   @media screen and (min-width: 992px) {
     #contact {
       background-position: bottom; } }
+  #contact p {
+    color: initial; }
   #contact .contact-box {
     background-color: rgba(250, 250, 250, 0.5); }
 
@@ -352,6 +471,9 @@
 
 #footer {
   font-size: 14px; }
+
+.logo {
+  height: 60px; }
 
 #footer .footer-social i {
   height: 35px;

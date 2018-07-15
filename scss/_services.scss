@@ -1,0 +1,28 @@
+@import 'zmienne';
+.service-section {
+    margin: 100px auto;
+    .service-square {
+        padding: 40px;
+        height: auto;
+        background-color: white;
+    }
+    .service-icon {
+        color: #D04E2D;
+        font-size: 24px;
+    }
+    .fa {
+        padding: 20px 0;
+    }
+    @media screen and(min-width: $small) {
+        height: 900px;
+        .service-img {
+            position: absolute;
+            margin-top: 320px;
+            width: 100%;
+            height: 60%;
+            background-image: url(../img/oscar-nord-696046-unsplash.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

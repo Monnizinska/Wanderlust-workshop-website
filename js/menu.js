@@ -1,19 +1,21 @@
-let navIcon = $('#nav-icon');
-let mainNav = $('#main-nav');
+'use strict';
 
-
-// hamburger animation & full screen menu
-
-$(document).ready(function () {
-    $("#nav-icon").click(function () {
-        $(this).toggleClass("animate-icon");
-        $("#main-nav").fadeToggle();
-
-    });
+$(function(){
+    
+    let navbar = $('#navbar');
+   $(window).scroll(function(){
+       
+       if (window.scrollY > ($('#main-header').height()/10)) {
+        navbar.addClass('shadow');
+       }
+       
+       if (window.scrollY < ($('#main-header').height()/10)) {
+        navbar.removeClass('shadow');
+       }
+       
+   });
+    
 });
-$(document).ready(function () {
-    $("#main-nav").click(function () {
-        $("#nav-icon").removeClass("animate-icon");
-        $("#main-nav").toggle();
-    });
-});
+
+
+

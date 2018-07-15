@@ -1,0 +1,48 @@
+@import 'zmienne';
+#main-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/vadim-sherbakov-41909-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    .header-caption {
+        overflow: visible;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+    }
+    h2 {
+        margin-top: -130px;
+    }
+    .frame {
+        display: block;
+        img {
+            width: 90vw;
+            height: 194.535px;
+            transition: none;
+            text-align: inherit;
+            line-height: 0px;
+            border-width: 0px;
+            @media screen and(min-width: $small) {
+                width: 60vw;
+            }
+            @media screen and(min-width: $medium) {
+                width: 50vw;
+            }
+        }
+    }
+    a {
+        background-color: $coral;
+        border: solid 2px transparent;
+        color: $light-gray;
+    }
+    a:hover {
+        background-color: transparent;
+        border: solid 2px $coral;
+        color: $coral;
+    }
+}

@@ -1,0 +1,46 @@
+@import 'zmienne';
+#premium {
+    padding: 150px 0;
+    text-align: center;
+    background-color: $dark-green;
+    color: $light-red;
+    .single-offer {
+        width: 250px;
+        display: inline-block;
+        position: relative;
+        .premium {
+            height: 455px;
+            background-size: cover;
+            background-position: center;
+        }
+        .premium-text {
+            overflow: hidden;
+            color: white;
+            margin: 270px auto 10px;
+            width: 85%;
+            transition: all 2s;
+        }
+        .premium-text:hover {
+            border-bottom: solid 1.5px white;
+        }
+        p{
+            background-color: $coral;
+            border-radius: 4px;
+            width: 50px;
+            text-align: center;
+            color: white;
+        }
+    }
+}
+
+#premium-1 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../img/joseph-pearson-273638-unsplash.jpg);
+}
+
+#premium-2 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../img/wenni-zhou-476645-unsplash.jpg);
+}
+
+#premium-3 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75)), url(../img/jon-ly-610685-unsplash.jpg);
+}
